@@ -1,0 +1,49 @@
+\documentclass[color]{tudbook}  % color: farbige Titelseite und farbige Kapitelüberschriften; nocolor: alles schwarz-weiß
+\usepackage[nogerman]{tudthesis}  % german/nogerman: Sprache der Arbeit, wichtig für Titelseite, Bildunterschriften etc.
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}   % nicht entfernen
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\graphicspath{ {./images/} }
+
+
+\begin{document}
+
+% Art der Arbeit: \diplom, \beleg, \bachelor, \master
+\beleg
+
+\author{Moritz Pflügner}
+\moreauthor{Matr.-Nr.: 4677226}
+\title{Learned Selection Strategy for Lightweight Integer Compression Algorithm Parameterizations}
+\supervisor{Prof. Dr.-Ing. habil. Dirk Habich}
+\supervisorII{Dr.-Ing. Claudio Hartmann}
+%optionaler Zweitbetreuer
+%\supervisorIII{Betreuer 2}
+\submitdate{20 October 2021}
+
+\maketitle
+
+\setstretch{1.2} % Anpassung Zeilenabstand an Schriftart. Bitte nicht verändern!
+
+\newpage
+% Selbständigkeitserklärung
+\confirmation
+\input{abstract}
+
+\tableofcontents
+
+\input{introduction}
+\input{preliminaries}
+\input{concepts_and_methods}
+\input{implementation}
+\input{evaluation}
+\input{summary_and_outlook}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
